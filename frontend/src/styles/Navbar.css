@@ -1,0 +1,76 @@
+/* Navbar.css */
+
+.navbar {
+  position: fixed;
+  height: 100px;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #ff7f50; /* Change the background color as needed */
+  padding: 20px;
+  overflow: hidden;
+  z-index: 1000; /* Ensure the navbar is above other elements */
+}
+
+/* Other styles */
+.logo {
+  flex: 1;
+}
+
+.logo-img {
+  width: 100px; /* Adjust size as needed */
+}
+
+.navLinks {
+  flex: 2;
+  display: flex;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  gap: 15px;
+}
+
+.links a {
+  text-decoration: none;
+  color: #f4f0ec; /* Set the color of navigation links */
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-right: 20px;
+}
+
+.links a:hover {
+  color: #cccccc; /* Set hover color for links */
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  border-radius: 8px;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.loginBtn {
+  background-color: #646cff; /* Change the login button color as needed */
+  color: #fff; /* Set the text color to white */
+}
+
+.registerBtn {
+  background-color: #9083d5; /* Change the register button color as needed */
+  color: #fff; /* Set the text color to white */
+}
+
+.logoutBtn {
+  background-color: #ff3d3d; /* Change the logout button color as needed */
+  color: #fff; /* Set the text color to white */
+}
