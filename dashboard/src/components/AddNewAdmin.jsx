@@ -125,7 +125,7 @@ const AddNewAdmin = () => {
             />
           </div>
           <div className="form-row">
-            <button type="submit">ADD NEW ADMIN</button>
+            <button type="submit submit-btn">ADD NEW ADMIN</button>
           </div>
         </form>
       </section>

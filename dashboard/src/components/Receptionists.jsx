@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
-import { toast } from "react-toastify";
 import { Link } from "react-router-dom";
 import "../styles/Receptionists.css";
 
@@ -8,19 +6,42 @@ const Receptionists = () => {
   const [receptionists, setReceptionists] = useState([]);
 
   useEffect(() => {
-    fetchReceptionists();
-  }, []);
+    // Static receptionists data
+    const staticReceptionists = [
+      {
+        id: 1,
+        firstName: "John",
+        lastName: "Doe",
+        photo: "https://via.placeholder.com/150",
+      },
+      {
+        id: 2,
+        firstName: "Jane",
+        lastName: "Smith",
+        photo: "https://via.placeholder.com/150",
+      },
+      {
+        id: 3,
+        firstName: "Alice",
+        lastName: "Johnson",
+        photo: "https://via.placeholder.com/150",
+      },
+      {
+        id: 4,
+        firstName: "Bob",
+        lastName: "Williams",
+        photo: "https://via.placeholder.com/150",
+      },
+      {
+        id: 5,
+        firstName: "Emily",
+        lastName: "Brown",
+        photo: "https://via.placeholder.com/150",
+      },
+    ];
 
-  const fetchReceptionists = async () => {
-    try {
-      const response = await axios.get(
-        "http://localhost:4000/api/v1/receptionists"
-      );
-      setReceptionists(response.data.receptionists);
-    } catch (error) {
-      toast.error("Error fetching receptionists");
-    }
-  };
+    setReceptionists(staticReceptionists);
+  }, []);
 
   return (
     <div className="container">
@@ -28,6 +49,10 @@ const Receptionists = () => {
       <ul>
         {receptionists.map((receptionist) => (
           <li key={receptionist.id}>
+            <img
+              src={receptionist.photo}
+              alt={`${receptionist.firstName} ${receptionist.lastName}`}
+            />
             {receptionist.firstName} {receptionist.lastName}
           </li>
         ))}

@@ -287,7 +287,7 @@ const AppointmentForm = () => {
       // Reset form fields after successful submission
       resetFormFields();
     } catch (error) {
-      toast.error(error.response.data.message);
+      //toast.error(error.response.data.message);
     }
   };
 

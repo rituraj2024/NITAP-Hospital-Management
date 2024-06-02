@@ -92,13 +92,15 @@ function AddNewDoctor() {
             <div className="avatar">
               <img
                 src={
-                  docAvatarPreview ? `${docAvatarPreview}` : "/docHolder.jpg"
+                  docAvatarPreview
+                    ? `${docAvatarPreview}`
+                    : "https://th.bing.com/th/id/OIP._40LAFN9WMqxcFdfdZf6wwHaE3?rs=1&pid=ImgDetMain"
                 }
                 alt="Doctor Avatar"
                 className="avatar-img"
               />
               <label htmlFor="avatar" className="avatar-label">
-                Upload Avatar
+                Upload Your Photo
               </label>
               <input
                 type="file"
