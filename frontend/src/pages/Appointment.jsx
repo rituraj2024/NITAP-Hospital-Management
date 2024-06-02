@@ -5,7 +5,7 @@ import AppointmentForm from "../components/AppointmentForm";
 const Appointment = () => {
   return (
     <>
-      <Hero title={"Schedule Your Appointment | ZeeCare Medical Institute"} />
+      <Hero title={"Schedule Your Appointment | NIT AP HEALTH CARE"} />
       <AppointmentForm />
     </>
   );

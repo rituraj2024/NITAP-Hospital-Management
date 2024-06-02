@@ -1,4 +1,4 @@
-footer {
+/* footer {
     background-color: #212121; /* Adjust color as needed */
     border-top: none;
     color: #ffffff;
@@ -60,4 +60,61 @@ footer {
     font-size: 20px;
     margin-right: 10px;
   }
-  
+   */
+
+   /* Footer.css */
+
+.container {
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.logo-container {
+  flex: 1;
+}
+
+.logo-img {
+  width: 150px;
+  height: auto;
+}
+
+.links-container,
+.hours-container,
+.contact-container {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.links-container h4,
+.hours-container h4,
+.contact-container h4 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.icon {
+  margin-right: 10px;
+  vertical-align: middle;
+}

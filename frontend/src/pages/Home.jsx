@@ -6,7 +6,7 @@ import Biography from "../components/Biography";
 const Home = () => {
   return (
     <>
-      <Hero title={"welcome to the health care"} />
+      <Hero title={"WELCOME TO NIT ANDHRA PRADESH HEALTH CARE"} />
 
       <Biography />
       <Departments />
